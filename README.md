@@ -7,3 +7,7 @@ since youtube-dl is not maintained anymore I changed this script to yt-dlp
 I rewrote the script to my needs.
 
 copy the file to `/usr/local/bin` and set a keybind in your WM to `clofi --audio`, and everytime you press your keybind the script will start playing the default or given youtube URL in the backgroud. Press again to kill mpv.
+
+
+
+or you can use clofi directly in the CLI if you want to have a pixelated video from the youtube video.
