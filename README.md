@@ -2,7 +2,7 @@
 
 clofi is a cli lofi player.
 
-## Prerequisites
+## Dependencies
 
 **Disclaimer:** only testet on Arch but should work an any Unix like system. If you run it while it is already running it will kill all mpv and cava sessions. Helpfull if you bind it to a key.
 

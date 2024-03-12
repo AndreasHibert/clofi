@@ -5,7 +5,7 @@
 # 
 # 
 # ----------------------------------------------------------------------------
-# Prerequisites:
+# Dependencies:
 # yt-dlp (https://github.com/yt-dlp/yt-dlp)
 # mpv (https://github.com/mpv-player/mpv)
 # tmux (https://github.com/tmux/tmux)
