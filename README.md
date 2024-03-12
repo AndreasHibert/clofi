@@ -1,26 +1,49 @@
 # clofi
 
-clofi is a fork from [ytplay](https://github.com/raphtlw/dotfiles/blob/master/bin/ytplay).
+clofi is a cli lofi player.
 
-since youtube-dl is not maintained anymore I changed this script to yt-dlp
+## Prerequisites
 
-I rewrote the script to my needs.
+**Disclaimer:** only testet on Arch but should work an any Unix like system. If you run it while it is already running it will kill all mpv and cava sessions. Helpfull if you bind it to a key.
 
+- [mpv](https://github.com/mpv-player/mpv)
 
+- [tmux](https://github.com/tmux/tmux)
 
-I have configred a few default lofi like streams. feel free to modify it to your needs.
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 
-example `clofi -hiphop` will run this URL `https://www.youtube.com/watch?v=jfKfPfyJRdk`  or `clofi -a -adhd` to run this URL with audio only `https://www.youtube.com/watch?v=CmMrm4BpQHU`.
+- [cava](https://github.com/karlstav/cava)
 
-to see the whole list just run `clofi -h`
+## Installation
 
+Just copy and run `clofi.sh`
 
+## Usage
 
-copy the file to `/usr/local/bin` and set a keybind in your WM to `clofi -a` , and everytime you press your keybind the script will start playing the default or given youtube URL in the backgroud. Press again to kill mpv.
+There are a few preconfigured youtube live streams for a full list run `clofi -h`.
 
-or you can use clofi directly in the CLI if you want to have a pixelated video from the youtube video.
+### Examples
 
+```bash
+# use default youtube link and video in the cli
+clofi
 
+# use a specific youtube link
+clofi -u "https://..."
 
-example:
+# use a preconfigred youtube link
+clofi -adhd
+
+# use cava insted of the video
+clofi -c
+
+# audio only (if you want to bind it to a key)
+clofi -a
+
+# run a random preconfigred youtube link and cava
+clofi -r -c
+```
+
+## Example:
+
 ![](clofi.gif)
