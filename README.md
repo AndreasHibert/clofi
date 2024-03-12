@@ -44,6 +44,4 @@ clofi -a
 clofi -r -c
 ```
 
-## Example:
-
 ![](clofi.gif)
