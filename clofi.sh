@@ -114,15 +114,15 @@ fi
 # start cava
 if [ -n "$CAVA" ]; then
   # Start the tmux session with the unique SESSION_ID
-  tmux new-session -d -s $SESSION_ID "yt-dlp '$URL' -f best -o - | mpv -vo null -"
+  tmux new-session -d -s $SESSION_ID "yt-dlp '$URL' -f best -o - | mpv -vo null --volume=100 --mute=no -"
   # Start cava
   cava
 elif [ -n "$AUDIO" ]; then
   # start audio only
-  yt-dlp "$URL" -f best -o - | mpv -vo null -
+  yt-dlp "$URL" -f best -o - | mpv -vo null --volume=100 --mute=no -
 else
   # else, play the video inline directly in the terminal with colors
-  yt-dlp --quiet --no-warnings "$URL" -f best -o - | mpv --vo=tct --really-quiet -
+  yt-dlp --quiet --no-warnings "$URL" -f best -o - | mpv --vo=tct --really-quiet --volume=100 --mute=no -
 fi
 
 exit 0
